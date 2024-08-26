@@ -4,10 +4,7 @@ This repo aims at documenting my understanding of things while learning **statef
 
 ## Repo structure
 
-The repo have two branches:
-
--   **main**: Contains the final code
--   **problems**: Contains proceeding commits on what the problem is
+-   **main**: Contains proceeding commits on what the problem is
 
 Note: The repo mainly focuses on the `store.ts` file because it contains the singleton pattern logic.
 
