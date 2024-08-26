@@ -19,8 +19,8 @@ Note: The repo mainly focuses on the `store.ts` file because it contains the sin
         ``` 
         In the above code we are able to create the instance twice .Therefore, not following *singleton approach*.
     **Solution**: `implementation 2: check if instance exists`
-    <br/>
-    `implementation 2: check if instance exists` makes sure that if the instance exists then it is returned else a new instance is created and returned.
+     makes sure that if the instance exists then it is returned else a new instance is created and returned.
+
         ```ts
         private static instance: GameManager;
 
