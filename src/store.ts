@@ -7,6 +7,7 @@ interface Game {
 
 export class GameManager {
     games: Game[] = [];
+    private static instance: GameManager;
 
     // singleton pattern
     private constructor() {
@@ -14,8 +15,10 @@ export class GameManager {
     }
 
     static getInstance() {
-        const gameManager = new GameManager();
-        return gameManager;
+        if (!this.instance) {
+            this.instance = new GameManager();
+        }
+        return this.instance;
     }
 
     getGame(id: string) {
